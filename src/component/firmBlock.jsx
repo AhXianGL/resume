@@ -6,7 +6,7 @@ export default function FirmBlock({
   return (
     <div className='firm-block-wrapper'>
       <div className='title'>
-        <span>{name}</span>
+        <span className='firm-name'>{name}</span>
         <span>{timeRange}</span>
       </div>
       <div className='description'>

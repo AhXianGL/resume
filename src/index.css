@@ -9,10 +9,10 @@ body {
   height: 100vh;
 }
 .App{
-  padding-left: 20%;
+  /* padding-left: 20%;
   padding-right: 20%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 .personal-info{
   border-bottom: 2px solid black;
@@ -29,7 +29,10 @@ body {
   margin-bottom: 5px;
 }
 .firm-block-wrapper .bold{
-  font-weight: bold;
+  font-weight: 600;
+}
+.firm-name{
+  margin-right: 5px;
 }
 .underline{
   text-decoration: underline;
