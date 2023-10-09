@@ -7,6 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   height: 100vh;
+  font-size: 13px;
+}
+.personal-info{
+  font-size: 16px;
+}
+.header{
+  font-size: 14px;
+}
+.content{
+  padding-left: 28px;
 }
 .App{
   /* padding-left: 20%;
@@ -20,7 +30,12 @@ body {
 .block{
   margin-bottom: 15px;
 }
-
+.block>.title{
+  font-size: 15px;
+}
+.bold{
+  font-weight: bold;
+}
 .target-position{
   margin-top: 15px;
 }
@@ -28,12 +43,18 @@ body {
   font-weight: bolder;
   margin-bottom: 5px;
 }
-.firm-block-wrapper .bold{
-  font-weight: 600;
-}
 .firm-name{
   margin-right: 5px;
 }
 .underline{
   text-decoration: underline;
+}
+ol{
+  margin-top: 0;
+}
+.firm-block-wrapper > .title{
+  font-size: 14px;
+}
+.contribution{
+  margin-top: 3px;
 }
