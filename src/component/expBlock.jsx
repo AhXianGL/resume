@@ -5,21 +5,20 @@ export default function ExpBlock({ title, timeStamp, contribution, highlight }) 
     <div className='exp-block-wrapper'>
       <div className='header bold'>{title}</div>
       <div className='content'>
-        <div className='contribution'>
+        {/* <div className='contribution'>
           <div className='bold'>贡献: </div>
           <ol>
             {contribution.map(
               item => <li>{item}</li>
             )}
           </ol>
-        </div>
+        </div> */}
         <div className='highlight'>
-          <div className='bold'>项目难点: </div>
-          <ol>
+          <ul>
             {highlight.map(
               item => <li>{item}</li>
             )}
-          </ol>
+          </ul>
         </div>
       </div>
     </div>
