@@ -58,3 +58,8 @@ ol{
 .contribution{
   margin-top: 3px;
 }
+.exp-block-wrapper{
+  .content{
+    padding: 0;
+  }
+}

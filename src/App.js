@@ -7,15 +7,18 @@ import cons from './contents/cons';
 import firms from './contents/firms';
 import education from './contents/education';
 import experience from './contents/experience';
+import Test from './component/test';
 function App() {
   return (
     <div className="App">
+      {/* <Test></Test> */}
       <header className='personal-info'>
         <div className='name'><Bold>孙 硕 鲜</Bold></div>
         <div className='info'>
           24岁 男 全日制本科 前端开发工程师
         </div>
         <div className='email phone'>
+          <div>现居江苏</div>
           <div>邮箱: <Bold>shuoxian.sun@gmail.com</Bold></div>
           <div>电话: <Bold>17798983609</Bold></div>
         </div>
@@ -23,7 +26,7 @@ function App() {
       <main>
         <Block
           blockClassName={"target-position"}
-          title={"目标岗位"}>前端开发工程师 期望薪资: 14k~16k</Block>
+          title={"目标岗位"}>前端开发工程师</Block>
         <Block title={"个人优势"}>
           <ul style={{ margin: 0 }}>
             {cons.map((item, index) => {
@@ -33,7 +36,22 @@ function App() {
             })}
           </ul>
         </Block>
-        
+        <Block title={"证书"}>
+          {
+            <ul>
+              <li>工信部NCIE-GIS信息化工程师一级、二级</li>
+            </ul>
+          }
+        </Block>
+        <Block title={"教育经历"}>
+          <ul style={{ margin: 0 }}>
+            {education.map((item, index) => {
+              return <li>
+                {item}
+              </li>
+            })}
+          </ul>
+        </Block>
         <Block
           title={"工作经历"}
         >
@@ -51,8 +69,12 @@ function App() {
         <Block
           title={"项目经验"}
         >
+          <div>
+            <Bold>从业以来所使用的技术栈</Bold>: <Bold>[React|Vue]+ Flux架构状态管理库 + [JS|TS] + [customize-cra | webpack | vite] + Antd</Bold>
+          </div>
+          <br></br>
           {
-            experience.map(exp=>{
+            experience.map(exp => {
               return <ExpBlock
                 highlight={exp.highlight}
                 title={exp.title}
@@ -61,22 +83,8 @@ function App() {
             })
           }
         </Block>
-        <Block title={"证书"}>
-          {
-            <div>
-              <div>工信部GIS信息化工程师二级</div>
-            </div>
-          }
-        </Block>
-        <Block title={"教育经历"}>
-          <ul style={{ margin: 0 }}>
-            {education.map((item, index) => {
-              return <li>
-                {item}
-              </li>
-            })}
-          </ul>
-        </Block>
+
+        
       </main>
     </div>
   );
