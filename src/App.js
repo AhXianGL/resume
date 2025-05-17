@@ -15,10 +15,10 @@ function App() {
       <header className='personal-info'>
         <div className='name'><Bold>孙 硕 鲜</Bold></div>
         <div className='info'>
-          24岁 男 全日制本科 前端开发工程师
+          25岁 男 全日制本科 前端开发工程师 三年经验
         </div>
         <div className='email phone'>
-          <div>现居江苏</div>
+          <div>现居江苏苏州</div>
           <div>邮箱: <Bold>shuoxian.sun@gmail.com</Bold></div>
           <div>电话: <Bold>17798983609</Bold></div>
         </div>
@@ -27,7 +27,7 @@ function App() {
         <Block
           blockClassName={"target-position"}
           title={"目标岗位"}>前端开发工程师</Block>
-        <Block title={"个人优势"}>
+        <Block title={"个人能力概述"}>
           <ul style={{ margin: 0 }}>
             {cons.map((item, index) => {
               return <li>
@@ -43,7 +43,7 @@ function App() {
             </ul>
           }
         </Block>
-        <Block title={"教育经历"}>
+        {/* <Block title={"教育经历"}>
           <ul style={{ margin: 0 }}>
             {education.map((item, index) => {
               return <li>
@@ -51,10 +51,16 @@ function App() {
               </li>
             })}
           </ul>
-        </Block>
+        </Block> */}
         <Block
           title={"工作经历"}
         >
+          <div>
+            <div style={{fontSize: '14px'}}><Bold>从业以来所使用的前端技术栈:</Bold></div> 
+            <ul>
+              <li><div>[React | Vue3] + [Redux | Dva | Pinia] + [JS | TS] + [customize-cra | webpack | vite] + [Antd | Arco-Design ... ...]</div></li>
+            </ul>
+          </div>
           {
             firms.map(firm => {
               return <FirmBlock
@@ -69,10 +75,7 @@ function App() {
         <Block
           title={"项目经验"}
         >
-          <div>
-            <Bold>从业以来所使用的技术栈</Bold>: <Bold>[React|Vue]+ Flux架构状态管理库 + [JS|TS] + [customize-cra | webpack | vite] + Antd</Bold>
-          </div>
-          <br></br>
+          
           {
             experience.map(exp => {
               return <ExpBlock
