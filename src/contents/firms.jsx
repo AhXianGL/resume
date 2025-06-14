@@ -4,18 +4,18 @@ const companies = [
     name: <span className='bold'>中国农业科学院华东中心(苏州中农数智科技有限公司)</span>,
     timeRange: <span className='timestamp'>{`${dayjs("2024-5-1").format("YYYY 年 MM月")} ~ 至今`}</span>,
     responsibilities: [
-      <span>团队协作: 兼任副组长的角色, 辅助识别项目风险点, 辅助产品设计</span>,
-      <span>DevOpts: 熟练使用docker、docker compose 推行了软件制品的容器化, 同时积累了一些shell脚本降低了部署和维护的时间成本; 熟练使用JumpServer搭建堡垒机, 熟练使用NPS进行内网穿透</span>,
+      <span>岗位职责: 高级前端开发, 兼副组长, 辅助识别项目风险点, 辅助产品设计</span>,
+      <span>AI流程编排和使用: 负责私有化部署Dify AI并且编排业务智能体, 实现了Web + AI的自然语言的交互方式</span>,
       <span>开发工作: 主要承担物联网设备控制和地图相关交互的开发, 同时维护公共组件</span>,
-      <span>AI流程编排和使用: 使用dify编排业务智能体, 为系统提供自然语言的交互方式</span>,
+      <span>DevOps: 熟练使用docker、docker compose 推行了软件制品和服务的容器化, 同时积累了一些shell脚本降低了部署和维护的时间成本; 熟练使用JumpServer搭建堡垒机, 熟练使用NPS进行内网穿透</span>,
     ]
   },
   {
     name: <span className='bold'>苏州牧星智能科技有限公司</span>,
     timeRange: <span className='timestamp'>{`${dayjs("2024-3-1").format("YYYY 年 MM月")}~ ${dayjs("2024-5-1").format("YYYY 年 MM月")}`}</span>,
     responsibilities: [
-      <span>团队协作开发和系统集成: 多子模块之间使用monorepo的模式进行协同开发、使用一个主应用 + 子模块npm包的方式进行系统集成</span>,
-      <span>面向对象和性能优化: 前端建立货架、货列、AGV小车等业务模型对应的Entity、VO、DTO, 使用面向对象的方式将React、图形库Pixi.js、业务对象结合起来用数据驱动视图更新, 实现大量小车的流畅渲染</span>,
+      <span>岗位职责: 高级前端开发, 推进多子模块之间使用monorepo的模式进行协同开发与系统集成</span>,
+      <span>开发工作: 前端建立货架、货列、AGV小车等业务模型对应的Entity、VO、DTO, 使用面向对象的方式将React、图形库Pixi.js、业务对象结合起来用数据驱动视图更新, 实现大量小车的流畅渲染</span>,
     ]
   },
   {
