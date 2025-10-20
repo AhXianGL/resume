@@ -1,0 +1,25 @@
+.name-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.contact-group {
+    display: flex;
+    gap: 24px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
